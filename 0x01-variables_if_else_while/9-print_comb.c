@@ -12,7 +12,7 @@ int main(void)
 {
 	int n = 0;
 
-	while (digit <= 9)
+	while (n <= 9)
 	{
 		putchar(n + 48);
 		if (n != 9)
@@ -22,6 +22,6 @@ int main(void)
 		}
 		n++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }

@@ -23,5 +23,5 @@ int main(void)
 		putchar(cp);
 		cp++;
 	}
-	putchar("\n");
+	putchar('\n');
 }
