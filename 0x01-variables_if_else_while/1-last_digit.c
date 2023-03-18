@@ -12,19 +12,16 @@
 
 int main(void)
 {
-	int n;
+	int n, digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int last = n % 10;
-	char words[] = " ";
-
-	if (n > 5)
-		words = "and is greater than 5";
-	else if (n < 6 && n != 0)
-		words = "and is less than 6 and not 0";
-	else if (n == 0)
-		words = "and is 0";
-	printf("Last digit of %i is %i %s\n", n, last, words);
+	digit = n % 10;
+	if (digit > 5)
+		printf("Last digit of %i is %i and is greater than 5\n", n, digit);
+	else if (digit < 6 && n != 0)
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, digit);
+	else if (digit == 0)
+		printf("Last digit of %i is %i and is 0\n", n, digit);
 	return (0);
 }
