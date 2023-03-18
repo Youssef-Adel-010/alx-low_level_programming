@@ -10,12 +10,18 @@
 
 int main(void)
 {
-	for (char i = 'a'; i <= 'z'; i++)
+	char sm = 'a';
+	char cp = 'A';
+
+	while (sm <= 'z')
 	{
-		putchar(i);
+		putchar(sm);
+		sm++;
 	}
-	for (char i = 'A'; i <= 'Z'; i++)
+	while (cp <= 'Z')
 	{
-		putchar(i);
+		putchar(cp);
+		cp++;
 	}
+	putchar("\n");
 }
