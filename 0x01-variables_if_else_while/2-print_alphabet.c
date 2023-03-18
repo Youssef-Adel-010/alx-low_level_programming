@@ -17,6 +17,6 @@ int main(void)
 		puts(ch);
 		ch++;
 	}
-	puts("\n")
+	puts('\n');
 	return (0);
 }
