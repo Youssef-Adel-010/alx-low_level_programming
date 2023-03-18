@@ -24,4 +24,5 @@ int main(void)
 		cp++;
 	}
 	putchar('\n');
+	return (0);
 }
