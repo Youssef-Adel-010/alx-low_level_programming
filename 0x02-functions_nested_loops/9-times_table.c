@@ -13,28 +13,22 @@ void times_table(void)
 	{
 		for (j = 0; j < 10; j += c)
 		{
-			_putchar(c2);
+			printf(c2);
 			c2 += c;
 			if (j != 9)
 			{
 				if (c2 <= 9)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					printf(",  ");
 				}
 				else
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf(", ");
 				}
 			}
 			c++;
 			c2 = 0;
-			_putchar('$');
-			_putchar('\n');
+			printf("$\n");
 		}
-		c++;
-		_putchar('\n');
 	}
 }
