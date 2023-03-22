@@ -7,11 +7,11 @@
 
 void times_table(void)
 {
-	int c = 0, c2 = 0;
+	int c = 0, c2 = 0, i = 0, j = 0;
 
-	for (int i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (int j = 0; j < 10; j += c)
+		for (j = 0; j < 10; j += c)
 		{
 			_putchar(c2);
 			c2 += c;
