@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - will print alphabet 10 times
  *
- * Description: A c program that prints with put function
- *
- * Return: Always 0 (Success)
 */
 
 void print_alphabet_x10(void)
@@ -19,6 +16,7 @@ void print_alphabet_x10(void)
 		{
 			_putchar(c);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+
 }
