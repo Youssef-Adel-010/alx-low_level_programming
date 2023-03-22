@@ -19,16 +19,20 @@ void times_table(void)
 			{
 				if (c2 <= 9)
 				{
-					printf(",  ");
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else
 				{
-					printf(", ");
+					_putchar(',');
+					_putchar(' ');
 				}
 			}
 			c++;
 			c2 = 0;
-			printf("$\n");
+			_putchar('$');
+			_putchar(' ');
 		}
 	}
 }
