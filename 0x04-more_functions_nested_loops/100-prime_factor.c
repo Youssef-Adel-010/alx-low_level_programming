@@ -5,27 +5,17 @@
  * Return: always zero
 */
 
-long long greatest_prime_factor(long long num) 
-{
-	long long factor = 2;
-	while (num > factor)
-	{
-		if (num % factor == 0) 
-		{
-			num /= factor;
-		}
-		else
-		{
-			factor++;
-		}
-	}
-	return factor;
-}
-
 int main(void)
 {
-	long long num = 612852475143;
-	long long result = greatest_prime_factor(num);
-	printf("%lld\n", result);
-	return 0;
+	long long int i, max, n = 612852475143;
+
+	for (i = 2; i * i <= n; i++)
+	{
+		while (n % i == 0)
+		{
+			n /= i;
+		}
+	}
+	if (n != 1)
+	    printf("%lld", n);
 }
