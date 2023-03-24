@@ -10,11 +10,6 @@ void print_number(int n)
 	int last, main,  rev = 0;
 	char flag = 'n';
 
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
 	main = n;
 	while (main)
 	{
