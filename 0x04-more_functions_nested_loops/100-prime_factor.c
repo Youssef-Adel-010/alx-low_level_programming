@@ -18,4 +18,5 @@ int main(void)
 	}
 	if (n != 1)
 	    printf("%lld", n);
+	return (0);
 }
