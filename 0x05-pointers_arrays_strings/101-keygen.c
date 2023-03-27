@@ -14,9 +14,9 @@ int main(void)
 	srand(time(NULL));
 	while (sum  <= 2645)
 	{
-		c = rend() % 100;
+		c = rand() % 128;
 		sum += c;
-		putchar (c);
+		putchar(c);
 	}
 	putchar(2772 - sum);
 	return (0);
